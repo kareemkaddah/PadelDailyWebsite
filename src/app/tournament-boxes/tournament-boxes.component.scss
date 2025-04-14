@@ -1,0 +1,31 @@
+.box {
+  max-width: 350px;
+  min-height: 250px;
+  margin: 10px 10px;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.image {
+  margin: 10px 10px;
+
+  height: 200px;
+  border-radius: 32px;
+  align-items: center;
+  display: flex;
+}
+.title {
+  text-align: left;
+  border-radius: 32px;
+}
+.description {
+  margin: 10px 10px;
+  text-align: left;
+}
+button {
+  background-color: black;
+  border: none;
+  border-color: none;
+  color: white;
+  border-radius: 7px;
+  margin-left: -215px;
+}

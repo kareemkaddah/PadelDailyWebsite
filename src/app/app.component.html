@@ -1,4 +1,6 @@
 <style>
+  * {
+  }
   :host {
     font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
@@ -27,13 +29,14 @@
   }
   .tournaments {
     max-width: 800px;
-    background-color: red;
+
     margin: auto;
     justify-content: center;
     display: flex;
     align-items: center;
     text-align: center;
     width: 70%;
+    flex-wrap: wrap;
   }
   p {
     margin: 0;
@@ -59,7 +62,30 @@
 </main>
 <div class="mainimages">this is the images section</div>
 <div class="tournaments">
-  <app-tournament-boxes></app-tournament-boxes>
+  <app-tournament-boxes
+    title="Americano"
+    description="A social format where players constantly rotate partners and opponents. Each match is played to a fixed number of points (e.g., 16 points). Points are counted individually, so even if you lose a match, you still collect points. The player with the highest total at the end wins. Great for mixed-level groups and fun events."
+  ></app-tournament-boxes>
+  <app-tournament-boxes
+    title="Mexicano"
+    description="Similar to Americano, but matchups are dynamically adjusted as the tournament progresses. Players with similar scores face off, making matches more balanced and competitive over time. Perfect for keeping the games tight and exciting."
+  ></app-tournament-boxes>
+  <app-tournament-boxes
+    title="Round Robin"
+    description="Teams play against every other team once. Matches can be full sets or a limited number of games. The team with the most wins (or total points) at the end wins the tournament. Best for a small number of fixed teams and ensures everyone gets plenty of playtime."
+  ></app-tournament-boxes>
+  <app-tournament-boxes
+    title="Knockout(Elimination)"
+    description="A classic bracket-style format. If you lose, you're out. Can be single elimination (1 loss = out) or double elimination (you get a second chance). Best for competitive tournaments and larger groups where time is limited."
+  ></app-tournament-boxes>
+  <app-tournament-boxes
+    title="King of the Court"
+    description="One team stays on the (King) side as long as they keep winning. Challenging teams rotate in after each point or mini-game. It's fast-paced, casual, and great for warmups or high-energy social events. Winning streaks add to the fun."
+  ></app-tournament-boxes>
+  <app-tournament-boxes
+    title="Fast4Format"
+    description="A quick-play format where sets are played to 4 games instead of 6. Tie-break at 3–3. No-advantage scoring (sudden death at deuce). Designed to speed things up while keeping the intensity high. Great for tight schedules or evening events."
+  ></app-tournament-boxes>
 </div>
 
 <router-outlet />
