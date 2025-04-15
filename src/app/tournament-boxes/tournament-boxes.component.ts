@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tournament-boxes',
@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 export class TournamentBoxesComponent {
   @Input() title: string = '';
   @Input() description: string = '';
+  @Input() selectedImage: string = '';
+  @Input() imageDiscription: string = '';
 }
